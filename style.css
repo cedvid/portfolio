@@ -1,0 +1,134 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #2C7D7D, #3fa4a4);
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    color: white;
+}
+ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.intro {
+    margin: auto;
+    padding: 8px;
+}
+.line1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.line2 {
+    overflow: hidden;
+    border-right: solid 2px white;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation:
+        typing 2.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Silkscreen', cursive;
+}
+@keyframes typing {
+    from { width: 0}
+    to { width: 100% }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-right-color: white }
+}
+.link-line, .resume {
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 15px;
+    border: 1px solid white;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 10px;
+}
+.project-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+}
+#projects {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #429595, #2C7D7D);
+
+}
+.project1, .project2, .project3 {
+    display: flex;
+    margin: 5%;
+    width: 60%;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #2C7D7D, #3fa4a4);
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+.back-top {
+    font-size: 30px;
+}
+.contact-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.form {
+	padding: 8px 24px 24px 24px;
+	margin: 48px 12px;
+	border-radius: 4px;
+}
+label {
+	font-size: 0.85em;
+	margin-left: 12px;
+}
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, #286f6f, #3fa4a4);
+    color: white;
+    gap: 5px;
+}
+.footer img {
+    width: 20px;
+    height: 20px;
+}

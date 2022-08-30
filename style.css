@@ -127,6 +127,7 @@ input[type=text],input[type=email], textarea {
     background-image: linear-gradient(to right, #286f6f, #3fa4a4);
     color: white;
     gap: 5px;
+    width: 100vw;
 }
 .footer img {
     width: 20px;
